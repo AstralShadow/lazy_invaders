@@ -26,6 +26,7 @@ void core::stop()
 }
 
 
+#include "core/game.hpp"
 void core::poll_events()
 {
     SDL_Event ev;
@@ -33,8 +34,12 @@ void core::poll_events()
     {
         switch(ev.type)
         {
-        case SDL_QUIT:
-            core::stop();
+        case SDL_MOUSEMOTION:
+            game::handle_event(ev.motion);
+            break;
+
+        case SDL_MOUSEWHEEL:
+            game::handle_event(ev.wheel);
             break;
 
         case SDL_KEYDOWN:
@@ -46,6 +51,19 @@ void core::poll_events()
         case SDL_MOUSEBUTTONUP:
             game::handle_event(ev.button);
             break;
+
+        case SDL_DROPFILE:
+        case SDL_DROPTEXT:
+        case SDL_DROPBEGIN:
+        case SDL_DROPCOMPLETE:
+            game::handle_event(ev.drop);
+            break;
+
+        case SDL_QUIT:
+            core::stop();
+            break;
         }
     }
 }
+
+extern int asd = 5;

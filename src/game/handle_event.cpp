@@ -18,3 +18,11 @@ void game::handle_event(SDL_KeyboardEvent& ev)
 {
     cout << "keyboard event!" << endl;
 }
+
+/*
+template<>
+void game::handle_event(SDL_MouseButtonEvent& ev)
+{
+    cout << "mouse event!" << endl;
+}
+*/

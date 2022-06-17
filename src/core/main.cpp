@@ -13,13 +13,17 @@ int main(int, char**)
     cout << "Initializing..." << endl;
     core::init();
 
-    cout << "Running " << PROJECT_NAME << ' '
-         << VERSION_MAJOR << '.' << VERSION_MINOR << endl;
+    cout << "Running "
+         << PROJECT_NAME << ' '
+         << VERSION_MAJOR << '.'
+         << VERSION_MINOR << endl;
 
     core::run();
 
-    cout << "Closing " << PROJECT_NAME << ' '
-         << VERSION_MAJOR << '.' << VERSION_MINOR << endl;
+    cout << "Closing "
+         << PROJECT_NAME << ' '
+         << VERSION_MAJOR << '.'
+         << VERSION_MINOR << endl;
 
     core::deinit();
 
