@@ -26,7 +26,6 @@ void core::stop()
 }
 
 
-#include "core/game.hpp"
 void core::poll_events()
 {
     SDL_Event ev;
@@ -65,5 +64,3 @@ void core::poll_events()
         }
     }
 }
-
-extern int asd = 5;

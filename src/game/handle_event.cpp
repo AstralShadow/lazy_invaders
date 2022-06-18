@@ -14,9 +14,9 @@ namespace game
 
 
 template<>
-void game::handle_event(SDL_KeyboardEvent& ev)
+void game::handle_event(SDL_KeyboardEvent&)
 {
-    cout << "keyboard event!" << endl;
+
 }
 
 /*

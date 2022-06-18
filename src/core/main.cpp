@@ -1,6 +1,6 @@
-#include "init.hpp"
-#include "core.hpp"
-#include "version.hpp"
+#include "core/init.hpp"
+#include "core/core.hpp"
+#include "core/version.hpp"
 
 #include <iostream>
 
