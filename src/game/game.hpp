@@ -10,6 +10,8 @@ namespace game
 
         template<typename T>
         void handle_event(T&);
+
+        struct player;
 }
 
 

@@ -1,19 +1,15 @@
 #ifndef INCLUDE_GEOMETRY_HPP
 #define INCLUDE_GEOMETRY_HPP
 
-#include <SDL2/SDL_rect.h>
+#include <utils/point.hpp>
 
 /**
  * Returns if two segments intersect.
  *
  * Puts the intersection point in *result.
  */
-bool segment_intersection(
-        SDL_FPoint p1,
-        SDL_FPoint p2,
-        SDL_FPoint p3,
-        SDL_FPoint p4,
-        SDL_FPoint* p_out = nullptr
-);
+bool segment_intersection(fpoint p1, fpoint p2,
+                          fpoint p3, fpoint p4,
+                          fpoint* p_out = nullptr);
 
 #endif // INCLUDE_GEOMETRY_HPP

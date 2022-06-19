@@ -1,16 +1,13 @@
 #include "geometry.hpp"
-#include <iostream>
 
 /**
  * Implementation based on Wikipedia:
  * https://en.wikipedia.org/wiki/Line-line_intersection
  */
 
-bool segment_intersection(SDL_FPoint p1,
-                          SDL_FPoint p2,
-                          SDL_FPoint p3,
-                          SDL_FPoint p4,
-                          SDL_FPoint* p_out)
+bool segment_intersection(fpoint p1, fpoint p2,
+                          fpoint p3, fpoint p4,
+                          fpoint* p_out)
 {
         float delta_x1 = p1.x - p2.x;
         float delta_y1 = p1.y - p2.y;
