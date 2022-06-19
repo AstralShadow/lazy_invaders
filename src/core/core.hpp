@@ -2,6 +2,7 @@
 #define INCLUDE_CORE_HPP
 
 #include "core/version.hpp"
+#include "core/config.hpp"
 
 struct SDL_Window;
 struct SDL_Renderer;

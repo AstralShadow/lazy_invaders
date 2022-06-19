@@ -1,4 +1,5 @@
-#include "game.hpp"
+#include "game/game.hpp"
+#include "core/core.hpp"
 #include <SDL2/SDL_events.h>
 
 #include <iostream>
@@ -6,26 +7,17 @@ using std::cout;
 using std::endl;
 
 
-namespace game
-{
-        template<typename T>
-        void handle_event(T&);
-}
-
-
-
 template<>
-void game::handle_event(SDL_KeyboardEvent&)
+void game::handle_event(SDL_KeyboardEvent& ev)
 {
-
+        if(ev.keysym.sym == SDLK_q)
+                core::stop();
 }
-
-
 
 template<>
 void game::handle_event(SDL_MouseButtonEvent&)
 {
-        cout << "mouse event!" << endl;
+        
 }
 
 template<>

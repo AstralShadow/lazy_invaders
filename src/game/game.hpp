@@ -3,8 +3,13 @@
 
 namespace game
 {
+        void init();
+
         void tick();
         void render();
+
+        template<typename T>
+        void handle_event(T&);
 }
 
 

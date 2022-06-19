@@ -1,8 +1,10 @@
-#ifndef INCLUDE_GAME_EXTERNAL_HPP
-#define INCLUDE_GAME_EXTERNAL_HPP
+#ifndef INCLUDE_CORE_GAME_HPP
+#define INCLUDE_CORE_GAME_HPP
 
 namespace game
 {
+        void init();
+
         void tick();
         void render();
 
@@ -10,4 +12,4 @@ namespace game
         extern void handle_event(event_t&) { }
 }
 
-#endif // INCLUDE_GAME_EXTERNAL_HPP
+#endif // INCLUDE_CORE_GAME_HPP

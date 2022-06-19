@@ -1,5 +1,6 @@
 #include "core/init.hpp"
 #include "core/core.hpp"
+#include "core/game.hpp"
 #include "core/config.hpp"
 #include <stdexcept>
 #include <string>
@@ -109,6 +110,8 @@ void core::init()
 #ifdef USE_SDL2_IMAGE
         init_sdl_image();
 #endif
+
+        game::init();
 
         create_window();
         create_renderer();
