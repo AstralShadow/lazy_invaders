@@ -48,42 +48,42 @@ target_compile_options(${PROJECT_NAME} PRIVATE
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 include(FetchContent)
 
-find_package(SDL2)
+find_package(SDL2 QUIET)
 if(NOT SDL2_FOUND)
         FetchContent_Declare(
                 SDL
                 GIT_REPOSITORY https://github.com/libsdl-org/SDL
-                GIT_TAG origin/main
+                GIT_TAG 53dea9830964eee8b5c2a7ee0a65d6e268dc78a1 #release-2.0.22
         )
         FetchContent_MakeAvailable(SDL)
 endif()
 
-find_package(SDL2_net)
+find_package(SDL2_net QUIET)
 if(NOT SDL2_NET_FOUND)
         FetchContent_Declare(
                 SDL_net
                 GIT_REPOSITORY https://github.com/libsdl-org/SDL_net
-                GIT_TAG origin/main
+                GIT_TAG efcc19f533a4203559b134b1882f6a0a5cbe81cf
         )
         FetchContent_MakeAvailable(SDL_net)
 endif()
 
-find_package(SDL2_image)
+find_package(SDL2_image QUIET)
 if(NOT SDL2_IMAGE_FOUND)
         FetchContent_Declare(
                 SDL_image
                 GIT_REPOSITORY https://github.com/libsdl-org/SDL_image
-                GIT_TAG origin/main
+                GIT_TAG 4be5ea2f988106530b7b6e264150dcce886c8d99
         )
         FetchContent_MakeAvailable(SDL_image)
 endif()
 
-find_package(SDL2_ttf)
+find_package(SDL2_ttf QUIET)
 if(NOT SDL2_TTF_FOUND)
         FetchContent_Declare(
                 SDL_ttf
                 GIT_REPOSITORY https://github.com/libsdl-org/SDL_ttf
-                GIT_TAG origin/main
+                GIT_TAG b9fd0e1ed8d7b24329000ef4685096f11c97bd6a
         )
         FetchContent_MakeAvailable(SDL_ttf)
 endif()
