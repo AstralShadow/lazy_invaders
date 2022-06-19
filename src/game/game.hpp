@@ -3,8 +3,8 @@
 
 namespace game
 {
-    void tick();
-    void render();
+        void tick();
+        void render();
 }
 
 

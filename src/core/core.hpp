@@ -8,13 +8,13 @@ struct SDL_Renderer;
 
 namespace core
 {
-    extern SDL_Window* window;
-    extern SDL_Renderer* renderer;
+        extern SDL_Window* window;
+        extern SDL_Renderer* renderer;
 
-    void run();
-    void stop();
+        void run();
+        void stop();
 
-    void poll_events();
+        void poll_events();
 }
 
 #endif // INCLUDE_CORE_HPP

@@ -3,8 +3,8 @@
 
 namespace game
 {
-    void render();
-    void tick();
+        void render();
+        void tick();
 }
 
 #endif // INCLUDE_BASE_HPP

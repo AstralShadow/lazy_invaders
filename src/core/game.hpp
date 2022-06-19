@@ -3,11 +3,11 @@
 
 namespace game
 {
-    void tick();
-    void render();
+        void tick();
+        void render();
 
-    template<typename event_t>
-    extern void handle_event(event_t&) { }
+        template<typename event_t>
+        extern void handle_event(event_t&) { }
 }
 
 #endif // INCLUDE_GAME_EXTERNAL_HPP

@@ -8,9 +8,10 @@ using std::endl;
 
 namespace game
 {
-    template<typename T>
-    void handle_event(T&);
+        template<typename T>
+        void handle_event(T&);
 }
+
 
 
 template<>
@@ -19,10 +20,16 @@ void game::handle_event(SDL_KeyboardEvent&)
 
 }
 
-/*
+
+
 template<>
-void game::handle_event(SDL_MouseButtonEvent& ev)
+void game::handle_event(SDL_MouseButtonEvent&)
 {
-    cout << "mouse event!" << endl;
+        cout << "mouse event!" << endl;
 }
-*/
+
+template<>
+void game::handle_event(SDL_MouseMotionEvent&)
+{
+
+}

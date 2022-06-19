@@ -8,10 +8,12 @@
  *
  * Puts the intersection point in *result.
  */
-bool segment_intersection(SDL_FPoint p1,
-                          SDL_FPoint p2,
-                          SDL_FPoint p3,
-                          SDL_FPoint p4,
-                          SDL_FPoint* p_out = nullptr);
+bool segment_intersection(
+        SDL_FPoint p1,
+        SDL_FPoint p2,
+        SDL_FPoint p3,
+        SDL_FPoint p4,
+        SDL_FPoint* p_out = nullptr
+);
 
 #endif // INCLUDE_GEOMETRY_HPP
