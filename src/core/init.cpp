@@ -74,6 +74,8 @@ void create_window()
                 SDL_WINDOWPOS_UNDEFINED,
                 800, 600,
                 0
+                //SDL_WINDOW_MOUSE_CAPTURE
+                //| SDL_WINDOW_INPUT_GRABBED
         );
 
         if(!core::window) {

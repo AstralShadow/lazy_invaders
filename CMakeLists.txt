@@ -39,8 +39,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED on)
 target_compile_options(${PROJECT_NAME} PRIVATE
         -Wall
         -Wextra
-        -Werror
         -pedantic
+        -Werror
 )
 
 
