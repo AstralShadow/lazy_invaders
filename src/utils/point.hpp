@@ -1,17 +1,7 @@
 #ifndef INCLUDE_POINT_HPP
 #define INCLUDE_POINT_HPP
 
-struct SDL_Point
-{
-        int x;
-        int y;
-};
-
-struct SDL_FPoint
-{
-        float x;
-        float y;
-};
+#include <SDL2/SDL_rect.h>
 
 typedef SDL_Point point;
 typedef SDL_FPoint fpoint;
